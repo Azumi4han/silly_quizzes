@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
+import solidStatic from "solid-start-static";
 import solid from "vite-plugin-solid";
 
 export default defineConfig({
-  plugins: [solid()],
+  plugins: [solid({ ssr: true })],
   base: "/silly_quizzes/",
   build: {
     target: "esnext",
