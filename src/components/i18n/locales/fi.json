@@ -1,0 +1,12 @@
+{
+  "app": {
+    "quizes": {
+      "waffle": {
+        "welcome": {
+          "title": "Perkele!!",
+          "description": "AAA"
+        }
+      }
+    }
+  }
+}

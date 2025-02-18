@@ -1,0 +1,110 @@
+{
+  "app": {
+    "quizes": {
+      "waffle": {
+        "welcome": {
+          "title": "Are you sure you want to take this quiz?",
+          "description": "Some people may go cook waffles after this quiz"
+        },
+        "questions": {
+          "first": {
+            "text": "You wake up at 6:00 AM. What is the first thing you will do?",
+            "buttons": {
+              "first": "Cook some waffles!",
+              "second": "Go brush your teeth",
+              "third": "Check your phone"
+            }
+          },
+          "second": {
+            "text": "With that in mind, you decided to close your eyes for:",
+            "buttons": {
+              "first": "1 minute!",
+              "second": "10 minutes!",
+              "third": "3 hours!"
+            }
+          },
+          "third": {
+            "text": "Suddenly, you hear a sound from your kitchen and open your eyes. What will you take with you?",
+            "buttons": {
+              "first": "a pink pencil case",
+              "second": "A long cat-shaped pillow",
+              "third": "An old green pencil"
+            }
+          },
+          "fourth": {
+            "text": "You open a door and see a waffle with a spoon. What do you do?",
+            "buttons": {
+              "first": "Stay calm and ask him if he wants to be eaten",
+              "second": "Point your weapon at him and start screaming",
+              "third": "Am I dreaming? This can't be possible"
+            }
+          },
+          "fifth": {
+            "text": "A waffle asks you politely to help him. Shall we?",
+            "buttons": {
+              "first": "Yes! We can even become friends later!!",
+              "second": "Yes, in the end I will eat him!",
+              "third": "I'm curious to see what will happen next..."
+            }
+          },
+          "sixth": {
+            "text": "A waffle shows you the ingredients for cooking, but you don't know how to cook. What do you do?",
+            "buttons": {
+              "first": "Sounds funny! Let's try!!",
+              "second": "I think I can figure it out, and if not, I will eat him",
+              "third": "Uhhm... not sure, but I will try my best!"
+            }
+          },
+          "seventh": {
+            "text": "Almost done! All you need to do is add one of the ingredients. Which one should it be?",
+            "buttons": {
+              "first": "Powdered sugar",
+              "second": "Nut butter",
+              "third": "Maple syrup",
+              "fourth": "Salt"
+            }
+          },
+          "eight": {
+            "text": "Done! You show him your perfect homemade waffle, and he seems happy!",
+            "buttons": {
+              "first": "Ask him if he wants to be your friend?",
+              "second": "Leave him and move on with your life",
+              "third": "Eat him and your homemade waffle!"
+            }
+          },
+          "ninth": {
+            "text": "Suddenly, your vision goes dark and you fall to the floor. You open your eyes and see the old, familiar ceiling.",
+            "buttons": {
+              "first": "Ohh... I'm late!",
+              "second": "Was it a dream? Now I want to go cook some waffles!",
+              "third": "Finally, this scary dream is over"
+            }
+          }
+        },
+        "result": {
+          "heart": {
+            "name": "You are Heart-Shaped Waffle!!",
+            "description": "You have a wholesome soul, and you always care about those around you!",
+            "link": "https://skandibaking.com/hjertevafler-norwegian-heart-shaped-waffles/",
+            "emoji": "🧇"
+          },
+          "pandan": {
+            "name": "You are a Pandan Waffle!!",
+            "description": "Sometimes things can go wrong, but you stay calm and keep a cool head while trying to resolve them! Good luck!",
+            "emoji": "🧇"
+          },
+          "ube": {
+            "name": "You are an Ube Waffle!!",
+            "description": "You like to fantasize a lot; no one can predict your next move!",
+            "emoji": "🧇"
+          },
+          "liege": {
+            "name": "You are a Liège Waffle!!",
+            "description": "Sometimes things can go wrong, but you stay calm and keep a cool head while trying to resolve them! Good luck!",
+            "emoji": "🧇"
+          }
+        }
+      }
+    }
+  }
+}
