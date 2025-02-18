@@ -1,5 +1,4 @@
 import { defineConfig } from "vite";
-import solidStatic from "solid-start-static";
 import solid from "vite-plugin-solid";
 
 export default defineConfig({
