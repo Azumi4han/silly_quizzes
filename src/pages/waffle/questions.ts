@@ -6,7 +6,7 @@ const t = useTranslator();
 export const WaffleQuizSettings: QuizProps = {
   title: t("app.quizes.waffle.welcome.title"),
   description: t("app.quizes.waffle.welcome.description"),
-  preview: "/images/waffle/waffle.png",
+  preview: "images/waffle/waffle.png",
   possibleTraits: [
     // User's traits
     "positive",
@@ -50,7 +50,7 @@ export const WaffleQuizSettings: QuizProps = {
     {
       id: 1,
       text: t("app.quizes.waffle.questions.first.text"),
-      image: "/images/waffle/woke_up.gif",
+      image: "images/waffle/woke_up.gif",
       answers: [
         {
           text: t("app.quizes.waffle.questions.first.buttons.first"),
@@ -69,7 +69,7 @@ export const WaffleQuizSettings: QuizProps = {
     {
       id: 2,
       text: t("app.quizes.waffle.questions.second.text"),
-      image: "/images/waffle/close_eyes.gif",
+      image: "images/waffle/close_eyes.gif",
       answers: [
         {
           text: t("app.quizes.waffle.questions.second.buttons.first"),
@@ -88,7 +88,7 @@ export const WaffleQuizSettings: QuizProps = {
     {
       id: 3,
       text: t("app.quizes.waffle.questions.third.text"),
-      image: "/images/waffle/sounds_from_kitchen.gif",
+      image: "images/waffle/sounds_from_kitchen.gif",
       answers: [
         {
           text: t("app.quizes.waffle.questions.third.buttons.first"),
@@ -107,7 +107,7 @@ export const WaffleQuizSettings: QuizProps = {
     {
       id: 4,
       text: t("app.quizes.waffle.questions.fourth.text"),
-      image: "/images/waffle/waffle_standing.gif",
+      image: "images/waffle/waffle_standing.gif",
       answers: [
         {
           text: t("app.quizes.waffle.questions.fourth.buttons.first"),
@@ -126,7 +126,7 @@ export const WaffleQuizSettings: QuizProps = {
     {
       id: 5,
       text: t("app.quizes.waffle.questions.fifth.text"),
-      image: "/images/waffle/waffle_ask_for_help.gif",
+      image: "images/waffle/waffle_ask_for_help.gif",
       answers: [
         {
           text: t("app.quizes.waffle.questions.fifth.buttons.first"),
@@ -145,7 +145,7 @@ export const WaffleQuizSettings: QuizProps = {
     {
       id: 6,
       text: t("app.quizes.waffle.questions.sixth.text"),
-      image: "/images/waffle/waffle_shows_products.gif",
+      image: "images/waffle/waffle_shows_products.gif",
       answers: [
         {
           text: t("app.quizes.waffle.questions.sixth.buttons.first"),
@@ -164,7 +164,7 @@ export const WaffleQuizSettings: QuizProps = {
     {
       id: 7,
       text: t("app.quizes.waffle.questions.seventh.text"),
-      image: "/images/waffle/select_one.gif",
+      image: "images/waffle/select_one.gif",
       answers: [
         {
           text: t("app.quizes.waffle.questions.seventh.buttons.first"),
@@ -187,7 +187,7 @@ export const WaffleQuizSettings: QuizProps = {
     {
       id: 8,
       text: t("app.quizes.waffle.questions.eight.text"),
-      image: "/images/waffle/perfect_waffle.gif",
+      image: "images/waffle/perfect_waffle.gif",
       answers: [
         {
           text: t("app.quizes.waffle.questions.eight.buttons.first"),
@@ -227,7 +227,7 @@ export const WaffleQuizSettings: QuizProps = {
     {
       id: 9,
       text: t("app.quizes.waffle.questions.ninth.text"),
-      image: "/images/waffle/fades_out.gif",
+      image: "images/waffle/fades_out.gif",
       answers: [
         {
           text: t("app.quizes.waffle.questions.ninth.buttons.first"),

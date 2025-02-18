@@ -131,6 +131,8 @@ export default function CombinationQuiz(props: QuizProps) {
   const [traits, setTraits] = createSignal<Set<string>>(new Set());
   const [result, setResult] = createSignal<QuizResult | null>(null);
 
+  const basePath = import.meta.env.BASE_URL;
+
   const handleAnswer = (selectedTraits: string[]) => {
     // Add new traits to the set
     setTraits((prev) => new Set([...prev, ...selectedTraits]));
@@ -172,7 +174,7 @@ export default function CombinationQuiz(props: QuizProps) {
       <Show when={!quizStarted()}>
         <QuizContainer>
           <Title>{props.title}</Title>
-          <Image src={props.preview} />
+          <Image src={`${basePath}${props.preview}`} />
           <Description>{props.description}</Description>
         </QuizContainer>
         <Buttons>
@@ -189,7 +191,9 @@ export default function CombinationQuiz(props: QuizProps) {
               Question {currentQuestion() + 1} of {props.questions.length}
             </h3>
             <Title>{props.questions[currentQuestion()].text}</Title>
-            <Image src={props.questions[currentQuestion()].image} />
+            <Image
+              src={`${basePath}${props.questions[currentQuestion()].image}`}
+            />
           </QuestionCard>
         </QuizContainer>
 
