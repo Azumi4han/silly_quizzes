@@ -116,8 +116,6 @@ const Description = styled("div")`
   margin-top: 2.5rem;
 `;
 
-const ResultScreen = styled("div")``;
-
 const TraitPill = styled("div")`
   display: inline-block;
   padding: 0.25rem 0.75rem;
@@ -161,7 +159,7 @@ export default function CombinationQuiz(props: QuizProps) {
   const restartQuiz = () => {
     setQuizStarted(false);
     setCurrentQuestion(0);
-    setTraits(new Set());
+    setTraits(new Set() as any); // lmao
     setResult(null);
   };
 
