@@ -3,7 +3,7 @@ import solid from "vite-plugin-solid";
 
 export default defineConfig({
   plugins: [solid()],
-  base: "/",
+  base: "/silly_quizzes/",
   build: {
     target: "esnext",
     outDir: "dist",
