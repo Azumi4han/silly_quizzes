@@ -33,7 +33,7 @@ render(
   () => (
     <Router root={Context} base={import.meta.env.BASE_URL}>
       <Route path="/" component={App as never}>
-        <Route path="/waffle" component={WaffleQuiz} />
+        <Route path="/*" component={WaffleQuiz} />
       </Route>
     </Router>
   ),
