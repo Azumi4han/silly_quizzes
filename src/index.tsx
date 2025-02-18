@@ -31,7 +31,7 @@ function Context(props: { children?: JSX.Element }) {
 
 render(
   () => (
-    <Router root={Context}>
+    <Router root={Context} base={import.meta.env.BASE_URL}>
       <Route path="/" component={App as never}>
         <Route path="/waffle" component={WaffleQuiz} />
       </Route>
