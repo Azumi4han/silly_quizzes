@@ -1,6 +1,6 @@
 /* @refresh reload */
 import { render } from "solid-js/web";
-import { createEffect, createMemo, createResource, type JSX } from "solid-js";
+import { createMemo, createResource, type JSX } from "solid-js";
 import { Route, Router } from "@solidjs/router";
 import { ThemeProvider, type DefaultTheme } from "solid-styled-components";
 import "./index.css";
