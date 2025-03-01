@@ -1,5 +1,5 @@
 import { createSignal, For, JSX, Show } from "solid-js";
-import { styled, keyframes } from "solid-styled-components";
+import { styled, keyframes, DefaultTheme } from "solid-styled-components";
 import { SillyButton } from "./ui";
 
 export interface Question {
@@ -26,6 +26,10 @@ export interface QuizResult {
 export interface QuizProps {
   title: JSX.Element;
   description: JSX.Element;
+  buttons: {
+    start: JSX.Element;
+    final: JSX.Element;
+  };
   preview: string;
   questions: Question[];
   possibleTraits: string[];
@@ -97,18 +101,18 @@ const Image = styled("img")`
   border-radius: 20px;
 `;
 
-const Title = styled("div")`
+const Title = styled("div")<{ theme?: () => DefaultTheme }>`
   text-align: center;
   font-size: 1.678rem;
   font-weight: 600;
   overflow: hidden;
-  font-family: "SillyFont";
+  font-family: ${(p) => p.theme!()!.fonts.primary};
   margin-bottom: 2.5rem;
   margin-top: 1.2rem;
 `;
 
-const Description = styled("div")`
-  font-family: "SillyFont";
+const Description = styled("div")<{ theme?: () => DefaultTheme }>`
+  font-family: ${(p) => p.theme!()!.fonts.primary};
   font-size: 1.0875rem;
   font-weight: 500;
   overflow: hidden;
@@ -179,7 +183,7 @@ export default function CombinationQuiz(props: QuizProps) {
         </QuizContainer>
         <Buttons>
           <SillyButton onClick={() => setQuizStarted(true)}>
-            Start Quiz 🧇
+            {props.buttons.start}
           </SillyButton>
         </Buttons>
       </Show>
@@ -224,7 +228,7 @@ export default function CombinationQuiz(props: QuizProps) {
         ) : (
           <Buttons>
             <SillyButton onClick={restartQuiz}>
-              Bake Another Waffle! 🧇
+              {props.buttons.final}
             </SillyButton>
           </Buttons>
         )}

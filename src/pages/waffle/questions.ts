@@ -1,11 +1,16 @@
-import { useTranslator } from "../../components/i18n";
+import { Dictionary } from "../../components/i18n";
+import * as i18n from "@solid-primitives/i18n";
 import { QuizProps } from "../../components/Quiz";
 
-const t = useTranslator();
-
-export const WaffleQuizSettings: QuizProps = {
+export const getWaffleQuizSettings = (
+  t: i18n.Translator<Dictionary>,
+): QuizProps => ({
   title: t("app.quizes.waffle.welcome.title"),
   description: t("app.quizes.waffle.welcome.description"),
+  buttons: {
+    start: t("app.quizes.waffle.welcome.buttons.start"),
+    final: t("app.quizes.waffle.welcome.buttons.final"),
+  },
   preview: "images/waffle/waffle.png",
   possibleTraits: [
     // User's traits
@@ -261,22 +266,6 @@ export const WaffleQuizSettings: QuizProps = {
   results: [
     {
       combination: [
-        "pink",
-        "positive",
-        "layered",
-        "sweet",
-        "hot",
-        "decorated",
-        "golden",
-      ],
-      name: "Ube Purple Waffle",
-      description:
-        "Vibrant Filipino-inspired yam delight with layered sweetness.",
-      image: "",
-      emoji: "🍠",
-    },
-    {
-      combination: [
         "positive",
         "crunchy",
         "golden",
@@ -285,10 +274,9 @@ export const WaffleQuizSettings: QuizProps = {
         "hot",
         "glazed",
       ],
-      name: "Liège Waffle",
-      description: "Caramelized Belgian delight with a crispy crust.",
-      image: "",
-      emoji: "🇧🇪",
+      name: t("app.quizes.waffle.result.liege.name"),
+      description: t("app.quizes.waffle.result.liege.description"),
+      emoji: t("app.quizes.waffle.result.liege.emoji"),
     },
     {
       combination: [
@@ -300,9 +288,9 @@ export const WaffleQuizSettings: QuizProps = {
         "cold",
         "decorated",
       ],
-      name: "Brussels Waffle",
-      description: "Light and airy, perfect for toppings!",
-      emoji: "🍓",
+      name: t("app.quizes.waffle.result.brussels.name"),
+      description: t("app.quizes.waffle.result.brussels.description"),
+      emoji: t("app.quizes.waffle.result.brussels.emoji"),
     },
     {
       combination: [
@@ -314,9 +302,9 @@ export const WaffleQuizSettings: QuizProps = {
         "hot",
         "decorated",
       ],
-      name: "American Classic",
-      description: "Fluffy circles of breakfast joy.",
-      emoji: "🇺🇸",
+      name: t("app.quizes.waffle.result.american.name"),
+      description: t("app.quizes.waffle.result.american.description"),
+      emoji: t("app.quizes.waffle.result.american.emoji"),
     },
     {
       combination: [
@@ -328,9 +316,9 @@ export const WaffleQuizSettings: QuizProps = {
         "hot",
         "decorated",
       ],
-      name: "Hong Kong Egg Waffle",
-      description: "Crispy honeycombed bubbles of happiness.",
-      emoji: "🐣",
+      name: t("app.quizes.waffle.result.egg.name"),
+      description: t("app.quizes.waffle.result.egg.description"),
+      emoji: t("app.quizes.waffle.result.egg.emoji"),
     },
     {
       combination: [
@@ -342,9 +330,9 @@ export const WaffleQuizSettings: QuizProps = {
         "cold",
         "layered",
       ],
-      name: "Stroopwafel",
-      description: "Dutch syrup-filled layers of crunch.",
-      emoji: "🍯",
+      name: t("app.quizes.waffle.result.stroopwafel.name"),
+      description: t("app.quizes.waffle.result.stroopwafel.description"),
+      emoji: t("app.quizes.waffle.result.stroopwafel.emoji"),
     },
     {
       combination: [
@@ -356,9 +344,9 @@ export const WaffleQuizSettings: QuizProps = {
         "hot",
         "decorated",
       ],
-      name: "Scandinavian Heart Waffle",
-      description: "Soft, vanilla-scented love on a plate.",
-      emoji: "❤️",
+      name: t("app.quizes.waffle.result.scandinavian.name"),
+      description: t("app.quizes.waffle.result.scandinavian.description"),
+      emoji: t("app.quizes.waffle.result.scandinavian.emoji"),
     },
     {
       combination: [
@@ -370,9 +358,9 @@ export const WaffleQuizSettings: QuizProps = {
         "hot",
         "glazed",
       ],
-      name: "Pandan Waffle",
-      description: "Tropical green crispness with coconut glaze.",
-      emoji: "🌴",
+      name: t("app.quizes.waffle.result.pandan.name"),
+      description: t("app.quizes.waffle.result.pandan.description"),
+      emoji: t("app.quizes.waffle.result.pandan.emoji"),
     },
     {
       combination: [
@@ -384,9 +372,9 @@ export const WaffleQuizSettings: QuizProps = {
         "hot",
         "stuffed",
       ],
-      name: "Savory Galette",
-      description: "Buckwheat waffle stuffed with herbs and cheese.",
-      emoji: "🧀",
+      name: t("app.quizes.waffle.result.savory.name"),
+      description: t("app.quizes.waffle.result.savory.description"),
+      emoji: t("app.quizes.waffle.result.savory.emoji"),
     },
     {
       combination: [
@@ -398,9 +386,9 @@ export const WaffleQuizSettings: QuizProps = {
         "hot",
         "glazed",
       ],
-      name: "Churro Waffle",
-      description: "Cinnamon-sugar coated crunch.",
-      emoji: "🎪",
+      name: t("app.quizes.waffle.result.churro.name"),
+      description: t("app.quizes.waffle.result.churro.description"),
+      emoji: t("app.quizes.waffle.result.churro.emoji"),
     },
     {
       combination: [
@@ -412,9 +400,9 @@ export const WaffleQuizSettings: QuizProps = {
         "hot",
         "decorated",
       ],
-      name: "Red Velvet Waffle",
-      description: "Decadent cocoa with a cream cheese crown.",
-      emoji: "🎀",
+      name: t("app.quizes.waffle.result.velvet.name"),
+      description: t("app.quizes.waffle.result.velvet.description"),
+      emoji: t("app.quizes.waffle.result.velvet.emoji"),
     },
     {
       combination: [
@@ -426,9 +414,9 @@ export const WaffleQuizSettings: QuizProps = {
         "hot",
         "stuffed",
       ],
-      name: "Chocolate-Stuffed Belgian",
-      description: "Melted chocolate core in every bite.",
-      emoji: "🍫",
+      name: t("app.quizes.waffle.result.chocolate.name"),
+      description: t("app.quizes.waffle.result.chocolate.description"),
+      emoji: t("app.quizes.waffle.result.chocolate.emoji"),
     },
     {
       combination: [
@@ -440,9 +428,9 @@ export const WaffleQuizSettings: QuizProps = {
         "hot",
         "layered",
       ],
-      name: "Winter Spiced Waffle",
-      description: "Cinnamon-apple layers for cozy mornings.",
-      emoji: "❄️",
+      name: t("app.quizes.waffle.result.winter.name"),
+      description: t("app.quizes.waffle.result.winter.description"),
+      emoji: t("app.quizes.waffle.result.winter.emoji"),
     },
     {
       combination: [
@@ -454,9 +442,9 @@ export const WaffleQuizSettings: QuizProps = {
         "cold",
         "glazed",
       ],
-      name: "Lazy Day Waffle",
-      description: "Microwaved leftovers with syrup drizzle.",
-      emoji: "🛋️",
+      name: t("app.quizes.waffle.result.lazy.name"),
+      description: t("app.quizes.waffle.result.lazy.description"),
+      emoji: t("app.quizes.waffle.result.lazy.emoji"),
     },
     {
       combination: [
@@ -468,9 +456,9 @@ export const WaffleQuizSettings: QuizProps = {
         "hot",
         "decorated",
       ],
-      name: "Ube Purple Waffle",
-      description: "Vibrant Filipino-inspired yam delight.",
-      emoji: "🍠",
+      name: t("app.quizes.waffle.result.ube.name"),
+      description: t("app.quizes.waffle.result.ube.description"),
+      emoji: t("app.quizes.waffle.result.ube.emoji"),
     },
     {
       combination: [
@@ -482,9 +470,9 @@ export const WaffleQuizSettings: QuizProps = {
         "hot",
         "decorated",
       ],
-      name: "Gluten-Free Almond",
-      description: "Nutty crunch with fresh berries.",
-      emoji: "🌾",
+      name: t("app.quizes.waffle.result.almond.name"),
+      description: t("app.quizes.waffle.result.almond.description"),
+      emoji: t("app.quizes.waffle.result.almond.emoji"),
     },
   ],
-};
+});

@@ -1,7 +1,8 @@
-import { styled, css } from "solid-styled-components";
+import { styled, css, DefaultTheme } from "solid-styled-components";
 
 export interface Props {
   readonly disable?: boolean;
+  readonly theme?: () => DefaultTheme;
 }
 
 export const SillyButton = styled("button")<Props>`
@@ -13,7 +14,7 @@ export const SillyButton = styled("button")<Props>`
   vertical-align: middle;
   text-decoration: none;
   font-size: inherit;
-  font-family: "SillyFont-2", sans-serif;
+  font-family: ${(p) => p.theme!()!.fonts.secondary};
   font-weight: 600;
   text-transform: uppercase;
 

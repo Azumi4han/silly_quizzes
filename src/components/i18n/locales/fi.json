@@ -3,8 +3,164 @@
     "quizes": {
       "waffle": {
         "welcome": {
-          "title": "Perkele!!",
-          "description": "AAA"
+          "title": "Oletko varma, että haluat tehdä tämän tietovisan?",
+          "description": "Jotkut saattavat mennä tekemään voffeleita tämän tietovisan jälkeen",
+          "buttons": {
+            "start": "Aloita tietovisa 🧇",
+            "final": "Paista toinen voffeli! 🧇"
+          }
+        },
+        "questions": {
+          "first": {
+            "text": "Heräät kello 6:00. Mikä on ensimmäinen asia, jonka teet?",
+            "buttons": {
+              "first": "Tee voffeleita!",
+              "second": "Mene harjaamaan hampaitasi",
+              "third": "Tarkista puhelimesi"
+            }
+          },
+          "second": {
+            "text": "Ajatellen sitä, päätit sulkea silmäsi:",
+            "buttons": {
+              "first": "1 minuutti!",
+              "second": "10 minuuttia!",
+              "third": "3 tuntia!"
+            }
+          },
+          "third": {
+            "text": "Yhtäkkiä kuulet äänen keittiöstä ja avaat silmäsi. Mitä otat mukaasi?",
+            "buttons": {
+              "first": "vaaleanpunainen kynäkotelo",
+              "second": "pitkä kissanmuotoinen tyyny",
+              "third": "vanha vihreä kynä"
+            }
+          },
+          "fourth": {
+            "text": "Avat oven ja näet voffelin, jossa on lusikka. Mitä teet?",
+            "buttons": {
+              "first": "Pysy rauhallisena ja kysy siltä, haluaako se tulla syödyksi",
+              "second": "Suuntaa aseesi sitä kohti ja ala huutaa",
+              "third": "Olenko unessa? Tämä ei voi olla totta"
+            }
+          },
+          "fifth": {
+            "text": "Voffeli pyytää sinua kohteliaasti auttamaan sitä. Mennäänkö?",
+            "buttons": {
+              "first": "Kyllä! Voimme jopa ystävystyä myöhemmin!!",
+              "second": "Kyllä, loppujen lopuksi syön sen!",
+              "third": "Olen utelias nähdäkseni, mitä seuraavaksi tapahtuu..."
+            }
+          },
+          "sixth": {
+            "text": "Voffeli näyttää sinulle ruoanlaittoainekset, mutta et osaa kokata. Mitä teet?",
+            "buttons": {
+              "first": "Kuulostaa hauskalta! Kokeillaan!!",
+              "second": "Luulen, että selviän, ja jos en, syön sen",
+              "third": "Öö... en ole varma, mutta yritän parhaani!"
+            }
+          },
+          "seventh": {
+            "text": "Melkein valmis! Sinun tarvitsee vain lisätä yksi ainesosa. Mikä se olisi?",
+            "buttons": {
+              "first": "Tomusokeri",
+              "second": "Pähkinävoi",
+              "third": "Vaahterasiirappi",
+              "fourth": "Suola"
+            }
+          },
+          "eight": {
+            "text": "Valmis! Näytät sille täydellisen kotitekoisen voffelisi, ja se näyttää iloiselta!",
+            "buttons": {
+              "first": "Kysy siltä, haluaako se olla ystäväsi?",
+              "second": "Jätä se taaksesi ja jatka elämääsi",
+              "third": "Syö se ja kotitekoisesi voffeli!"
+            }
+          },
+          "ninth": {
+            "text": "Yhtäkkiä näkysi pimenee ja kaadut lattialle. Avaa silmäsi ja näet vanhan, tutun katon.",
+            "buttons": {
+              "first": "Voi... Olen myöhässä!",
+              "second": "Oliko se unta? Nyt haluan tehdä voffeleita!",
+              "third": "Lopulta, tämä pelottava uni on ohi"
+            }
+          }
+        },
+        "result": {
+          "liege": {
+            "name": "Liège-voffeli",
+            "description": "Karamellisoitunut belgialainen herkku, jossa on rapea kuori.",
+            "emoji": "🇧🇪"
+          },
+          "brussels": {
+            "name": "Brysselvoffeli",
+            "description": "Kevyt ja ilmava, täydellinen täytteille!",
+            "emoji": "🍓"
+          },
+          "american": {
+            "name": "Amerikkalainen klassikko",
+            "description": "Pehmeät ympyrät aamiaisen ilosta.",
+            "emoji": "🇺🇸"
+          },
+          "egg": {
+            "name": "Hongkongin munavoffeli",
+            "description": "Rapeita, hunajakennoisia kuplia onnellisuutta.",
+            "emoji": "🐣"
+          },
+          "stroopwafel": {
+            "name": "Stroopwafel",
+            "description": "Hollantilainen, siirapilla täytettyjen rapeiden kerrosten herkku.",
+            "emoji": "🍯"
+          },
+          "scandinavian": {
+            "name": "Skandinaavinen sydänvoffeli",
+            "description": "Pehmeä, vaniljatuoksuinen rakkaus lautasella.",
+            "emoji": "❤️"
+          },
+          "pandan": {
+            "name": "Pandan-voffeli",
+            "description": "Trooppista vihreää rapeutta kookoskuorrutteella.",
+            "emoji": "🌴"
+          },
+          "savory": {
+            "name": "Suolainen galette",
+            "description": "Tattarivoffeli, täytetty yrteillä ja juustolla.",
+            "emoji": "🧀"
+          },
+          "churro": {
+            "name": "Churro-voffeli",
+            "description": "Kaneli-sokerilla kuorrutettu rapeus.",
+            "emoji": "🎪"
+          },
+          "velvet": {
+            "name": "Red Velvet -voffeli",
+            "description": "Ylellistä kaakaota, jonka kruunaa tuorejuustokruunu.",
+            "emoji": "🎀"
+          },
+          "chocolate": {
+            "name": "Suklaatäytteinen belgialainen",
+            "description": "Jokaisesta suupalasta löytyy sulanut suklaaydin.",
+            "emoji": "🍫"
+          },
+          "winter": {
+            "name": "Talvimausteinen voffeli",
+            "description": "Kaneli-omenakerroksia viihtyisiin aamuhetkiin.",
+            "emoji": "❄️"
+          },
+          "lazy": {
+            "name": "Laiskanpäivän voffeli",
+            "description": "Mikroaaltouunissa lämmitetyt ylijäämät siirappikastikkeella.",
+            "emoji": "🛋️"
+          },
+          "ube": {
+            "name": "Ube-violetti voffeli",
+            "description": "Eläväinen filippiiniläisistä bataateista inspiroitunut herkku.",
+            "emoji": "🍠"
+          },
+          "almond": {
+            "name": "Gluteeniton mantelivoffeli",
+            "description": "Pähkinäinen rapeus tuoreiden marjojen kera.",
+            "emoji": "🌾"
+          }
         }
       }
     }

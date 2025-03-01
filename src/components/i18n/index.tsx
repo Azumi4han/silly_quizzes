@@ -17,7 +17,7 @@ export enum Language {
   RUSSIAN = "ru",
 }
 
-type Dictionary = i18n.Flatten<typeof dict.en>;
+export type Dictionary = i18n.Flatten<typeof dict.en>;
 
 const [language, _setLanguage] = createSignal<Language>("en" as Language);
 export { language };
@@ -35,7 +35,6 @@ export { duringI18nTransition };
 export function setLanguage(key: Language) {
   startI18nTransition(() => {
     _setLanguage(key);
-    console.log("Language set to:", key, "Current signal:", language());
   });
 }
 

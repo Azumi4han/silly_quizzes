@@ -1,6 +1,12 @@
+import { useTranslator } from "../../components/i18n";
 import SillyQuiz from "../../components/Quiz";
-import { WaffleQuizSettings } from "./questions";
+import { getWaffleQuizSettings } from "./questions";
 
 export default function WaffleQuiz() {
-  return <SillyQuiz {...WaffleQuizSettings} />;
+  const t = useTranslator();
+  return (
+    <div>
+      <SillyQuiz {...getWaffleQuizSettings(t)} />
+    </div>
+  );
 }

@@ -63,6 +63,16 @@ img {
 }
 
 @font-face {
+  font-family: "SillyFontRU";
+  src: url("/fonts/HandveticaNeue-Regular/HandveticaNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SillyFontRU-2";
+  src: url("/fonts/AngrybirdsRegular/AngrybirdsRegular.ttf");
+}
+
+@font-face {
   font-family: "SillyFont-2";
   src: url("/fonts/kbluckyclover-font/Kbluckyclover-djAR.ttf");
 }

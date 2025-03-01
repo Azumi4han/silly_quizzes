@@ -4,7 +4,11 @@
       "waffle": {
         "welcome": {
           "title": "Are you sure you want to take this quiz?",
-          "description": "Some people may go cook waffles after this quiz"
+          "description": "Some people may go cook waffles after this quiz",
+          "buttons": {
+            "start": "Start Quiz 🧇",
+            "final": "Bake Another Waffle! 🧇"
+          }
         },
         "questions": {
           "first": {
@@ -82,26 +86,80 @@
           }
         },
         "result": {
-          "heart": {
-            "name": "You are Heart-Shaped Waffle!!",
-            "description": "You have a wholesome soul, and you always care about those around you!",
-            "link": "https://skandibaking.com/hjertevafler-norwegian-heart-shaped-waffles/",
-            "emoji": "🧇"
+          "liege": {
+            "name": "Liège Waffle",
+            "description": "Caramelized Belgian delight with a crispy crust.",
+            "emoji": "🇧🇪"
+          },
+          "brussels": {
+            "name": "Brussels Waffle",
+            "description": "Light and airy, perfect for toppings!",
+            "emoji": "🍓"
+          },
+          "american": {
+            "name": "American Classic",
+            "description": "Fluffy circles of breakfast joy.",
+            "emoji": "🇺🇸"
+          },
+          "egg": {
+            "name": "Hong Kong Egg Waffle",
+            "description": "Crispy honeycombed bubbles of happiness.",
+            "emoji": "🐣"
+          },
+          "stroopwafel": {
+            "name": "Stroopwafel",
+            "description": "Dutch syrup-filled layers of crunch.",
+            "emoji": "🍯"
+          },
+          "scandinavian": {
+            "name": "Scandinavian Heart Waffle",
+            "description": "Soft, vanilla-scented love on a plate.",
+            "emoji": "❤️"
           },
           "pandan": {
-            "name": "You are a Pandan Waffle!!",
-            "description": "Sometimes things can go wrong, but you stay calm and keep a cool head while trying to resolve them! Good luck!",
-            "emoji": "🧇"
+            "name": "Pandan Waffle",
+            "description": "Tropical green crispness with coconut glaze.",
+            "emoji": "🌴"
+          },
+          "savory": {
+            "name": "Savory Galette",
+            "description": "Buckwheat waffle stuffed with herbs and cheese.",
+            "emoji": "🧀"
+          },
+          "churro": {
+            "name": "Churro Waffle",
+            "description": "Cinnamon-sugar coated crunch.",
+            "emoji": "🎪"
+          },
+          "velvet": {
+            "name": "Red Velvet Waffle",
+            "description": "Decadent cocoa with a cream cheese crown.",
+            "emoji": "🎀"
+          },
+          "chocolate": {
+            "name": "Chocolate-Stuffed Belgian",
+            "description": "Melted chocolate core in every bite.",
+            "emoji": "🍫"
+          },
+          "winter": {
+            "name": "Winter Spiced Waffle",
+            "description": "Cinnamon-apple layers for cozy mornings.",
+            "emoji": "❄️"
+          },
+          "lazy": {
+            "name": "Lazy Day Waffle",
+            "description": "Microwaved leftovers with syrup drizzle.",
+            "emoji": "🛋️"
           },
           "ube": {
-            "name": "You are an Ube Waffle!!",
-            "description": "You like to fantasize a lot; no one can predict your next move!",
-            "emoji": "🧇"
+            "name": "Ube Purple Waffle",
+            "description": "Vibrant Filipino-inspired yam delight.",
+            "emoji": "🍠"
           },
-          "liege": {
-            "name": "You are a Liège Waffle!!",
-            "description": "Sometimes things can go wrong, but you stay calm and keep a cool head while trying to resolve them! Good luck!",
-            "emoji": "🧇"
+          "almond": {
+            "name": "Gluten-Free Almond",
+            "description": "Nutty crunch with fresh berries.",
+            "emoji": "🌾"
           }
         }
       }
